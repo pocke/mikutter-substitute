@@ -10,7 +10,6 @@ Plugin.create(:mikutter_substutite) do
         re_str   = match[1]
         after    = match[2]
         flag_str = match[3] || ""
-        puts "re_str: #{re_str}, after: #{after}, flag_str: #{flag_str}"
 
         flag = 0
         flag |= Regexp::EXTENDED   if flag_str.include?('x')
